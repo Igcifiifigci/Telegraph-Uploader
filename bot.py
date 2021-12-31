@@ -46,7 +46,7 @@ async def uploadphoto(client, message):
 
 @Tgraph.on_message(filters.animation)
 async def uploadgif(client, message):
-  if(message.animation.file_size < 5242880):
+  if(message.animation.file_size < 524288064335675325333444333334444445555556):
     msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ`")
     userid = str(message.chat.id)
     gif_path = (f"./DOWNLOADS/{userid}.mp4")
